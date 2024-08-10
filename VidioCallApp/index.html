@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WebRTC Demo</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>Chetan's Personalize Vidio Calling App</h1>
+      <p>Real-time video communication made simple</p>
+    </header>
+
+    <section>
+      <h2>1. Start Your Webcam</h2>
+      <div class="videos">
+        <div class="video-wrapper">
+          <h3>Local Stream</h3>
+          <video id="webcamVideo" autoplay playsinline></video>
+        </div>
+        <div class="video-wrapper">
+          <h3>Remote Stream</h3>
+          <video id="remoteVideo" autoplay playsinline></video>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>2. Create a New Call</h2>
+      <button id="webcamButton" class="button">Start Webcam</button>
+      <button id="callButton" class="button" disabled>Create Call (Offer)</button>
+    </section>
+
+    <section>
+      <h2>3. Join a Call</h2>
+      <p>Answer the call from a different browser window or device</p>
+      <input id="callInput" class="input-field" placeholder="Enter Call ID" />
+      <button id="answerButton" class="button" disabled>Answer</button>
+    </section>
+
+    <section>
+      <h2>4. Hangup</h2>
+      <button id="hangupButton" class="button" disabled>Hangup</button>
+    </section>
+  </div>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
